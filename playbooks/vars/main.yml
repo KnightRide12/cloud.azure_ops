@@ -1,4 +1,5 @@
 ---
+azure_region: "eastus"
 azure_vm_name: webapp-vm-
 azure_vm_user: ansible
 azure_vm_user_password: 4fB5In3ueO7,
