@@ -15,6 +15,8 @@
     - name: Create application infrastructure
       ansible.builtin.import_role:
         name: scale_virtual_machine
+      vars:
+        scale_virtual_machine_resource_group: "{{ azure_resource_group }}"
 
     - name: Create the database instance
       when: operation | default('create') == 'create'
