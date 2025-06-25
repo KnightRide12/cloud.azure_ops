@@ -103,7 +103,6 @@
     public_ip_per_vm: false
     load_balancer: "{{ scale_virtual_machine_load_balancer.name }}"
     security_group: "{{ scale_virtual_machine_security_group }}"
-    scale_in_policy: Default
 
 - name: Get virtual machine scale set instance info
   azure.azcollection.azure_rm_virtualmachinescalesetinstance_info:
